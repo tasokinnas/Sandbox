@@ -1,4 +1,4 @@
-table 50102 "Customer Rewards Mgt Setup"
+table 50102 "Customer Rewards Mgt. Setup"
 {
     Caption = 'Customer Rewards Mgt. Setup';
     DataClassification = CustomerContent;
@@ -13,7 +13,7 @@ table 50102 "Customer Rewards Mgt Setup"
 
         field(2; "Cust. Rew. Ext. Mgt. Cod. ID"; Integer)
         {
-            Caption = 'Customer Rewards Ext. Mgt. Codeunit ID';
+            Caption = 'Customer Rewards Ext Mgt Codeunit ID';
             DataClassification = CustomerContent;
             TableRelation = "CodeUnit Metadata".ID;
         }

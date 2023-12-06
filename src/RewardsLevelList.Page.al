@@ -1,7 +1,7 @@
 page 50101 "Rewards Level List"
 {
     PageType = List;
-    ContextSensitiveHelpPage = 'sales-rewards';
+    //ContextSensitiveHelpPage = 'sales-rewards';
     SourceTable = "Reward Level";
     SourceTableView = sorting("Minimum Reward Points") order(ascending);
 
@@ -11,13 +11,13 @@ page 50101 "Rewards Level List"
         {
             repeater(Group)
             {
-                field(Level; Level)
+                field(Level; 'Level')
                 {
                     ApplicationArea = All;
                     Tooltip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
-                field("Minimum Reward Points"; "Minimum Reward Points")
+                field("Minimum Reward Points"; 'Minimum Reward Points')
                 {
                     ApplicationArea = All;
                     Tooltip = 'Specifies the number of points that customers must have to reach this level.';
